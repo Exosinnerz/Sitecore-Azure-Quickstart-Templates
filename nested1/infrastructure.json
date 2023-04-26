@@ -115,7 +115,7 @@
     "sqlServerName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-sql')]"
+      "defaultValue": "['sql-', concat(parameters('deploymentId'), 'db-corpweb01')]"
     },
     "sqlServerLogin": {
       "type": "string",
@@ -176,7 +176,7 @@
     "redisCacheName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-redis')]"
+      "defaultValue": "['rds-', concat(parameters('deploymentId'), 'app-01')]"
     },
     "useApplicationInsights": {
       "type": "bool",
@@ -185,58 +185,58 @@
     "applicationInsightsName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-ai')]"
+      "defaultValue": "['ais-', concat(parameters('deploymentId'), 'na-corpweb01')]"
     },
     "applicationInsightsLocation": {
       "type": "string",
-      "defaultValue": "East US"
+      "defaultValue": "Southeast Asia"
     },
     "applicationInsightsPricePlan": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-ai-pp')]"
+      "defaultValue": "[concat(parameters('deploymentId'), '-ais-pp')]"
     },
 
     "siHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-si-hp')]"
+      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app-si')]"
     },
     "cmHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cm-hp')]"
+      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app-cm01')]"
     },
     "cdHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cd-hp')]"
+      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app-cd01')]"
     },
     "prcHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-prc-hp')]"
+      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app-prc')]"
     },
 
     "siWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-si')]"
+      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'izapp-si')]"
     },
     "cmWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cm')]"
+      "defaultValue": "['asp-', concat(parameters('deploymentId'), '-cm')]"
     },
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cd')]"
+      "defaultValue": "['asp-', concat(parameters('deploymentId'), '-cd')]"
     },
     "prcWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-prc')]"
+      "defaultValue": "['asp-', concat(parameters('deploymentId'), '-prc')]"
     },
     "authCertificateName": {
       "type": "string",
