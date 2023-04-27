@@ -78,7 +78,7 @@
     "sqlServerName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['sql-', concat(parameters('deploymentId'), 'db-corpweb01')]"
+      "defaultValue": "[concat('sql-', parameters('deploymentId'), 'db-corpweb01')]"
     },
 
     "sqlDatabaseCollation": {
@@ -111,28 +111,28 @@
     "xcBasicHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), '-xc-basic-hp')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), '-xc-basic-hp')]"
     },
     "xcResourceIntensiveHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), '-xc-resourceintensive-hp')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), '-xc-resourceintensive-hp')]"
     },
 
     "xcRefDataWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-refdata')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-xc-refdata')]"
     },
     "xcCollectWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-collect')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-xc-collect')]"
     },
     "xcSearchWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-search')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-xc-search')]"
     },
 
     "skuMap": {
