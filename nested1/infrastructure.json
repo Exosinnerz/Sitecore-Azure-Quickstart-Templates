@@ -221,22 +221,22 @@
     "siWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'izapp-si')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-si')]"
     },
     "cmWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), '-cm')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cm01')]"
     },
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), '-cd')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cd01')]"
     },
     "prcWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), '-prc')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-prc')]"
     },
     "authCertificateName": {
       "type": "string",
