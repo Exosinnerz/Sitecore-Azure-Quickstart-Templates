@@ -268,7 +268,7 @@
     "applicationInsightsName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-ai')]"
+      "defaultValue": "['ais-', concat(parameters('deploymentId'), 'na-corpweb01')]"
     },
     "storeSitecoreCountersInApplicationInsights": {
       "type": "bool",
@@ -293,57 +293,57 @@
     "siWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-si')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-si')]"
     },
     "cmWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cm')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cm01')]"
     },
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cd')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cd01')]"
     },
     "prcWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-prc')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-prc')]"
     },
     "xcCollectWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-xc-collect')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-collect')]"
     },
     "xcSearchWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-xc-search')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-search')]"
     },
     "maOpsWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-ma-ops')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-ma-ops')]"
     },
     "maRepWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-ma-rep')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-ma-rep')]"
     },
     "xcRefDataWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-xc-refdata')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-refdata')]"
     },
     "cortexReportingWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cortex-reporting')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cortex-reporting')]"
     },
     "cortexProcessingWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat(parameters('deploymentId'), '-cortex-processing')]"
+      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cortex-processing')]"
     },
 
     "authCertificateThumbprint": {
