@@ -82,7 +82,7 @@
     "sqlServerName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['sql-', concat(parameters('deploymentId'), 'db-corpweb01')]"
+      "defaultValue": "[concat('sql-' ,parameters('deploymentId'), 'db-corpweb01')]"
     },
     "sqlServerLogin": {
       "type": "string",
@@ -319,7 +319,7 @@
     "redisCacheName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['rds-', concat(parameters('deploymentId'), 'app-01')]"
+      "defaultValue": "[concat('rds-', parameters('deploymentId'), 'app-01')]"
     },
 
     "xcSearchIndexName": {
@@ -344,7 +344,7 @@
     "applicationInsightsName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ais-', concat(parameters('deploymentId'), 'na-corpweb01')]"
+      "defaultValue": "[concat('ais-', parameters('deploymentId'), 'na-corpweb01')]"
     },
     "applicationInsightsLocation": {
       "type": "string",
@@ -367,96 +367,96 @@
 
     "siHostingPlanName": {
       "type": "string",
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app-si')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), 'app-si')]"
     },
     "cmHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app-cm01')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), 'app-cm01')]"
     },
     "cdHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app-cd01')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), 'app-cd01')]"
     },
     "prcHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app-prc')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), 'app-prc')]"
     },
     "xcBasicHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app--xc-basic-hp')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), 'app--xc-basic-hp')]"
     },
     "xcResourceIntensiveHostingPlanName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app--xc-resourceintensive-hp')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), 'app--xc-resourceintensive-hp')]"
     },
     "exmDdsHostingPlanName": {
       "type": "string",
-      "defaultValue": "['asp-', concat(parameters('deploymentId'), 'app--exm-dds-hp')]"
+      "defaultValue": "[concat('asp-', parameters('deploymentId'), 'app--exm-dds-hp')]"
     },
 
     "siWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-si')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-si')]"
     },
     "cmWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cm01')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-cm01')]"
     },
     "cdWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cd01')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-cd01')]"
     },
     "prcWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-prc')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-prc')]"
     },
     "xcRefDataWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-refdata')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-xc-refdata')]"
     },
     "xcCollectWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-collect')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-xc-collect')]"
     },
     "xcSearchWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-xc-search')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-xc-search')]"
     },
     "maOpsWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-ma-ops')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-ma-ops')]"
     },
     "maRepWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-ma-rep')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-ma-rep')]"
     },
     "cortexProcessingWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cortex-processing')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-cortex-processing')]"
     },
     "cortexReportingWebAppName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-cortex-reporting')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-cortex-reporting')]"
     },
     "exmDdsWebAppName": {
       "type": "string",
-      "defaultValue": "['ase-', concat(parameters('deploymentId'), 'izapp-exm-dds')]"
+      "defaultValue": "[concat('ase-', parameters('deploymentId'), 'izapp-exm-dds')]"
     },
 
     "siMsDeployPackageUrl": {
