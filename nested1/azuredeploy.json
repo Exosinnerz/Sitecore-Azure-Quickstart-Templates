@@ -82,7 +82,7 @@
     "sqlServerName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "[concat('sql-' ,parameters('deploymentId'), 'db-corpweb01')]"
+      "defaultValue": "[concat('sql-', parameters('deploymentId'), 'db-corpweb01')]"
     },
     "sqlServerLogin": {
       "type": "string",
