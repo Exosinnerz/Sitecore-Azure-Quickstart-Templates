@@ -268,7 +268,7 @@
     "applicationInsightsName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "['ais-', concat(parameters('deploymentId'), 'na-corpweb01')]"
+      "defaultValue": "[concat('ais-', parameters('deploymentId'), 'na-corpweb01')]"
     },
     "storeSitecoreCountersInApplicationInsights": {
       "type": "bool",
